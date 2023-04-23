@@ -1,0 +1,81 @@
+.section-top{
+    background-color: #222;
+    height: 100%;
+    padding-top: 20px;
+    position: relative;
+  }
+
+  .info{
+    margin: 0;
+  }
+
+  .active-contract{
+
+    width: 50%;
+    position: relative;
+    flex-direction: column;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    overflow-y: scroll;
+    flex: 1 1 0px;
+
+    padding: 20px 40px;
+
+
+  }
+
+  .test-token{
+    background-color: #9084ed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0 0 0;
+
+  }
+  .test-token__content{
+   margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: #222;
+    flex-direction: column;
+
+  }
+  .name-token{
+    display: flex;
+  }
+
+  .create-contract-box{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 0;
+     margin: 0;
+  }
+  .title{
+    margin: 5px;
+  }
+
+  input,textarea{
+    background: rgba(255, 255, 255, 0.05);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 0;
+  }
+
+  .change-supplpy{
+    background: rgba(255, 255, 255, 0.05);
+  }
+  textarea:focus{
+    outline: 3px solid #9084ed;
+  }
+  input:focus{
+    outline: 3px solid #9084ed;
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+      /* display: none; <- Crashes Chrome on hover */
+      -webkit-appearance: none;
+      margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+  }
