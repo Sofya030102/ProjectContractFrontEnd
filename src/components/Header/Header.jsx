@@ -1,8 +1,34 @@
 import React from 'react';
 import './Header.css'
+import {useState} from 'react'
+import {ethers} from 'ethers'
+
 
 
 function Header() {
+   const [userAccount, setUserAccount] = useState(null)
+
+   const [balance,setBalance] = useState(0)
+
+   const onConnect = () =>{
+      if(window.ethereum){
+        window.ethereum.request({method:"eth_requestAccounts"}).then((account)=>{
+         setUserAccount(account[0]);
+        })
+      }else{
+         alert('установите метамаск');
+      }
+   }
+
+   const getBalance =  (account)=>{
+      window.ethereum.request({
+         method:'eth_getBalance',
+         params: [account,'latest'],
+      }).then((balance)=>{
+         setBalance(ethers.formatEther(balance));
+      })
+   }
+
     return (
       <div >
          <header className='header-page'>
@@ -28,7 +54,17 @@ function Header() {
              </nav>
 
              <div className="header-page__authorization">
-               <button className='enable-wallet'>Подключить кошелек</button>
+               {userAccount ? (
+                 <div className="user_info">
+                   <span className='user_info-active'>ваш аккаунт:{userAccount}</span>
+                   <span className='user_info-active'>ваш баланс:{balance}</span>
+
+                 </div>
+               ):(
+             <>
+               <button onClick={onConnect} className='enable-wallet'>Подключить кошелек</button>
+            </>
+               )}
              </div>
            </div>
          </header>
