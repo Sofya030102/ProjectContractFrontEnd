@@ -2,7 +2,7 @@ import React from 'react';
 
 import './Header.css'
 import {useState} from 'react'
-import {ethers} from 'ethers'
+//import {ethers} from 'ethers'
 
 import {
    Link,
@@ -25,21 +25,23 @@ function Header() {
       }
    }
 
-   const getBalance =  (account)=>{
+   /*const getBalance =  (account)=>{
       window.ethereum.request({
          method:'eth_getBalance',
          params: [account,'latest'],
       }).then((balance)=>{
          setBalance(ethers.formatEther(balance));
       })
-   }
+   }*/
 
     return (
       <div >
          <header className='header-page'>
            <div className="header-page__container container">
 
+               <Link to="/" style={{'textDecoration':'none','color':"white"}}>
              <div className="logo"><span>C</span>ontract<span>M</span>aker</div>
+             </Link>
 
              <nav className="header-page__nav">
               <ul className="header-page__ul">

@@ -7,10 +7,11 @@ import {
   BrowserRouter as Router,
   Routes ,
   Route,
-  Link,
 } from 'react-router-dom';
 
-
+import Page2  from './components/pageGuide/Page2';
+import PageMint from './components/pageMint/PageMint';
+import PageMain from './components/pageMain/PageMain';
 
 function App() {
   return (
@@ -18,10 +19,10 @@ function App() {
     <div className="container">
       <Header />
       <Routes >
-        <Route path="/" element={<h1>Главная</h1>} />
+        <Route path="/" element={<PageMain />} />
         <Route path="/contract" element={<SectionCreate />} />
-        <Route path="/create" element={<h1>Главная</h1>} />
-        <Route path="/guide" element={<h1>Главная</h1>} />
+        <Route path="/create" element={<PageMint />} />
+        <Route path="/guide" element={<Page2 />} />
       </Routes >
     </div>
     </Router>
