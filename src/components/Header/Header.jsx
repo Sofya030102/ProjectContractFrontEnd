@@ -1,7 +1,12 @@
 import React from 'react';
+
 import './Header.css'
 import {useState} from 'react'
 import {ethers} from 'ethers'
+
+import {
+   Link,
+ } from 'react-router-dom';
 
 
 
@@ -39,16 +44,13 @@ function Header() {
              <nav className="header-page__nav">
               <ul className="header-page__ul">
                  <li className="header-page__li">
-                    <a href="https://www.google.ru/" className="header-page__link">Guide</a>
+                    <Link to="guide" className="header-page__link">Гид</Link>
                  </li>
                  <li className="header-page__li">
-                    <a href="https://www.google.ru/" className="header-page__link">Artkit</a>
+                    <Link to="contract" className="header-page__link">Контракт</Link>
                  </li>
                  <li className="header-page__li">
-                    <a href="https://www.google.ru/#" className="header-page__link">Contact</a>
-                 </li>
-                 <li className="header-page__li">
-                    <a href="https://www.google.ru/" className="header-page__link">Mint</a>
+                    <Link to="create" className="header-page__link">Выпустить</Link>
                  </li>
               </ul>
              </nav>
