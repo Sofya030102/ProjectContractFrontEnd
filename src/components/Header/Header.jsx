@@ -2,7 +2,7 @@ import React from 'react';
 import './Header.css'
 import {useState} from 'react'
 import {ethers} from 'ethers'
-
+import MyToken from './MyToken.json'
 
 
 function Header() {
@@ -29,6 +29,23 @@ function Header() {
       })
    }
 
+   const deployConract = async ()=>{
+
+
+      const provider = new ethers.providers.Web3Provider(window.ethereum);
+      const abi = MyToken.abi;
+      const bytecode = MyToken.bytecode; // your compiled contract bytecode
+
+      const contractFactory = new ethers.ContractFactory(abi, bytecode, provider.getSigner());
+      const contract = await contractFactory.deploy('myToken','nft');
+
+      await contract.deployed();
+      const contractAddress = contract.address;
+      console.log(contractAddress)
+   }
+
+
+
     return (
       <div >
          <header className='header-page'>
@@ -52,7 +69,7 @@ function Header() {
                  </li>
               </ul>
              </nav>
-
+             <button onClick={deployConract} className='enable-wallet'>кнопка</button>
              <div className="header-page__authorization">
                {userAccount ? (
                  <div className="user_info">
