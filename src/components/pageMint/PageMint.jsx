@@ -7,7 +7,7 @@ function PageMint() {
     <body >
       <div >
         <div className='background'>
-          <div className='container'>
+          <div className='container-mint'>
             <div className='rectangle'>
               <div >
                 <div >
