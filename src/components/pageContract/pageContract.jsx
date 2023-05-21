@@ -1,6 +1,6 @@
 import React from 'react';
 import contractImg from '../../img/contract.jpg'
-import './sectionCreate.css'
+import './pageContract.css'
 
 function SectionCreate(){
     return(
@@ -9,27 +9,7 @@ function SectionCreate(){
   <div className="section-top__container container">
 
      <div className="create-contract active-contract">
-          <div className="create-contract__info">
-
-            <p className='info'> Contract Maker представляет собой бесплатный инструмент, 
-            который позволяет конфигурировать, компилировать, развертывать и проверять свои
-             NFT смарт-контракты.
-            </p> 
-
-            <p>Наша цель - помочь вам создать, задеплоить и продать вашу 
-            NFT-коллекцию без лишних трудозатрат и необходимости иметь предварительный опыт в программировании.
-            </p> 
-            
-
-            <p>Вы сами устанавливаете цены и правила продажи на ваши коллекции, а полученную прибыль получаете непосредственно на
-            свой кошелек.
-            </p>
-
-            <p>
-            Присоединяйтесь к нашей платформе и создавайте уникальные NFT-коллекции уже сегодня!
-            </p>
-
-          </div>
+          
 
           <div className="test-token">
              <div className="test-token__content">
