@@ -1,0 +1,122 @@
+.container0-MintPage0 {
+    display: flex;
+    position: absolute;
+    top: 70%;
+    left: 55%;
+    transform: translate(-70%, 55%);
+}
+
+
+.container-MintPage0 {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    width: 490px;
+    gap: 20px;
+    background: rgb(28, 28, 28);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.h2-MintPage0 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.5;
+    color: rgb(221, 221, 221);
+    text-align: center;
+}
+
+.space-MintPage0 {
+    display: block;
+    min-height: 20px;
+    height: 20px;
+    max-height: 20px;
+}
+
+.input-MintPage0 {
+    font-size: 16px;
+    font-family: monospace;
+    font-weight: 400;
+    line-height: 1.4;
+    color: rgb(248, 248, 250);
+    flex: 1 1 0px;
+    position: relative;
+    border: 0px;
+    outline: none;
+    width: 474px;
+    min-width: 0px;
+    text-align: center;
+    align-self: stretch;
+    border-radius: 4px;
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.space2-MintPage0 {
+    display: block;
+    min-height: 10px;
+    height: 10px;
+    max-height: 10px;
+}
+
+.divide-line-MintPage0 {
+    height: 1px;
+    min-height: 1px;
+    max-height: 1px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.lower-text-MintPage0 {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+}
+
+.markup-lower-MintPage0 {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.text-MintPage0 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    line-height: 1.4;
+    color: rgb(221, 221, 221);
+}
+
+.space3-MintPage0 {
+    display: block;
+    flex: 1 1 0%;
+}
+
+.address-wallet-MintPage0 {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    background: rgb(17, 17, 17);
+    border-radius: 5px;
+}
+
+.address-wallet-text-MintPage0 {
+    font-size: 1.1rem;
+    color: white;
+    line-height: 1.65;
+}
+
+.space4-MintPage0 {
+    display: inline-block;
+    min-width: 6px;
+    width: 6px;
+    max-width: 6px;
+}
