@@ -21,6 +21,13 @@
   justify-content: center;
   align-items: center;
   height: 93.5vh;
+  gap: 20px;
+}
+
+.gap-mintpage {
+  flex-direction: column;
+  display: flex;
+  gap: 20px;
 }
 
 .rectangle {
@@ -272,7 +279,7 @@
 .button-minting {
   appearance: none;
   padding: 12px 16px;
-  border-radius: 4px;
+  border-radius: 9px;
   display: flex;
   -webkit-box-align: center;
   align-items: center;
@@ -283,6 +290,7 @@
   cursor: pointer;
   user-select: none;
   background: white;
+  color: gray;
 }
 
 .lowbar {
@@ -351,7 +359,6 @@
   font-size: inherit;
   line-height: inherit;
   color: inherit;
-  outline: rgba(255, 255, 255, 0.2) solid 1px;
 }
 
 .mint-bar-style {
@@ -361,7 +368,6 @@
   flex: 0 0 auto;
   position: relative;
   border: 0px;
-  outline: none;
   min-width: 31px;
   text-align: left;
   border-radius: 4px;
@@ -374,10 +380,21 @@
   -webkit-box-pack: center;
   justify-content: center;
 }
+.color-text-white-lowbar{
+  color: white;
+  height: 23px;
+  width: 450px;
+  resize: none;
+  text-align: center;
+  padding-top: 13px;
+}
 
 .wallet-area {
   display: flex;
-  position: relative;
+  position: absolute;
+  top:50%;
+  right: 0%;
+  transform: translate(0%,-50%);
   flex-direction: row;
   -webkit-box-align: center;
   align-items: center;
@@ -396,9 +413,11 @@
   width: 190px;
   display: flex;
   position: relative;
+  justify-content: center;
+  border-radius: 5px;
   flex-direction: row;
-  -webkit-box-align: stretch;
-  align-items: stretch;
+  -webkit-box-align: center;
+  align-items: center;
   background: rgb(17, 17, 17);
 }
 
@@ -408,4 +427,26 @@
   display: flex;
   align-items: center;
   padding: 10px;
+}
+
+.minting-space {
+  display: flex;
+  min-width: 3px;
+  width: 100px;
+  max-width: 100px;
+}
+
+.mint-button {
+  display: flex;
+  max-width: 31px;
+  border: 2px;
+  padding: 15px 8px;
+  background: rgba(255, 255, 255, 0.05);
+  color: rgb(248, 248, 250);
+  height: 45.6px;
+  border-radius: 5px;
+}
+
+.right-area-mintpage{
+position: relative;
 }
