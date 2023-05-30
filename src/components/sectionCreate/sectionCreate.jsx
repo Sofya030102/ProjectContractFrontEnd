@@ -10,9 +10,25 @@ function SectionCreate(){
 
      <div className="create-contract active-contract">
           <div className="create-contract__info">
-            <p className='info'>Studio 721 is a free tool for configuring,
-            compiling, deploying, and verifying custom  NFT smart contracts. Studio 721 doesn't host your assets or metadata; use your favorite hosting service and link it to your NFT via "Token URI". Not sure where to start? There's a
-            Created by </p>
+
+            <p className='info'> Contract Maker представляет собой бесплатный инструмент, 
+            который позволяет конфигурировать, компилировать, развертывать и проверять свои
+             NFT смарт-контракты.
+            </p> 
+
+            <p>Наша цель - помочь вам создать, задеплоить и продать вашу 
+            NFT-коллекцию без лишних трудозатрат и необходимости иметь предварительный опыт в программировании.
+            </p> 
+            
+
+            <p>Вы сами устанавливаете цены и правила продажи на ваши коллекции, а полученную прибыль получаете непосредственно на
+            свой кошелек.
+            </p>
+
+            <p>
+            Присоединяйтесь к нашей платформе и создавайте уникальные NFT-коллекции уже сегодня!
+            </p>
+
           </div>
 
           <div className="test-token">
@@ -62,22 +78,7 @@ function SectionCreate(){
                </div>
              </div>
           </div>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit
-            . Hic eveniet, laudantium nihil eligendi quae dolores doloremque
-             repellendus nobis placeat ipsum dolor nisi distinctio corporis
-             nostrum nemo, sint doloribus quod inventore?</p>
-             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit
-            . Hic eveniet, laudantium nihil eligendi quae dolores doloremque
-             repellendus nobis placeat ipsum dolor nisi distinctio corporis
-             nostrum nemo, sint doloribus quod inventore?</p>
-             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit
-            . Hic eveniet, laudantium nihil eligendi quae dolores doloremque
-             repellendus nobis placeat ipsum dolor nisi distinctio corporis
-             nostrum nemo, sint doloribus quod inventore?</p>
-             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit
-            . Hic eveniet, laudantium nihil eligendi quae dolores doloremque
-             repellendus nobis placeat ipsum dolor nisi distinctio corporis
-             nostrum nemo, sint doloribus quod inventore?</p>
+          <p></p>
      </div>
 
      <div className="result-contract active-contract">

@@ -1,8 +1,18 @@
 import React from 'react';
+
 import './Header.css'
 import {useState} from 'react'
+// HEAD
 import {ethers} from 'ethers'
 import MyToken from './MyToken.json'
+
+//import {ethers} from 'ethers'
+
+import {
+   Link,
+ } from 'react-router-dom';
+
+// 296f0499eab11de284ec37a917338085dba70edf
 
 
 function Header() {
@@ -20,14 +30,14 @@ function Header() {
       }
    }
 
-   const getBalance =  (account)=>{
+   /*const getBalance =  (account)=>{
       window.ethereum.request({
          method:'eth_getBalance',
          params: [account,'latest'],
       }).then((balance)=>{
          setBalance(ethers.formatEther(balance));
       })
-   }
+   }*/
 
    const deployConract = async ()=>{
 
@@ -51,21 +61,20 @@ function Header() {
          <header className='header-page'>
            <div className="header-page__container container">
 
+               <Link to="/" style={{'textDecoration':'none','color':"white"}}>
              <div className="logo"><span>C</span>ontract<span>M</span>aker</div>
+             </Link>
 
              <nav className="header-page__nav">
               <ul className="header-page__ul">
                  <li className="header-page__li">
-                    <a href="https://www.google.ru/" className="header-page__link">Guide</a>
+                    <Link to="guide" className="header-page__link">Гид</Link>
                  </li>
                  <li className="header-page__li">
-                    <a href="https://www.google.ru/" className="header-page__link">Artkit</a>
+                    <Link to="contract" className="header-page__link">Контракт</Link>
                  </li>
                  <li className="header-page__li">
-                    <a href="https://www.google.ru/#" className="header-page__link">Contact</a>
-                 </li>
-                 <li className="header-page__li">
-                    <a href="https://www.google.ru/" className="header-page__link">Mint</a>
+                    <Link to="create" className="header-page__link">Выпустить</Link>
                  </li>
               </ul>
              </nav>
