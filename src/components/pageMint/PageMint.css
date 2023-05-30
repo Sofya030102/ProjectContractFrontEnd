@@ -1,26 +1,9 @@
-.background {
-  position: absolute;
-  inset: 0;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.form {
-  max-width: 600px;
-  margin: 0 auto;
-  background-color: #ffffff;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
 .container-mint {
   display: flex;
   position: relative;
   justify-content: center;
   align-items: center;
-  height: 93.5vh;
+  height: 80.1vh;
   gap: 20px;
 }
 
@@ -36,6 +19,7 @@
   background-color: #282828;
   padding: 30px 40px;
   border-radius: 4px;
+  position: absolute;
 }
 
 .name-network {
@@ -380,7 +364,8 @@
   -webkit-box-pack: center;
   justify-content: center;
 }
-.color-text-white-lowbar{
+
+.color-text-white-lowbar {
   color: white;
   height: 23px;
   width: 450px;
@@ -392,9 +377,9 @@
 .wallet-area {
   display: flex;
   position: absolute;
-  top:50%;
+  top: 50%;
   right: 0%;
-  transform: translate(0%,-50%);
+  transform: translate(0%, -50%);
   flex-direction: row;
   -webkit-box-align: center;
   align-items: center;
@@ -447,6 +432,6 @@
   border-radius: 5px;
 }
 
-.right-area-mintpage{
-position: relative;
+.right-area-mintpage {
+  position: relative;
 }

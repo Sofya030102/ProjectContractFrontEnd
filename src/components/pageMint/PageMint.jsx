@@ -4,9 +4,9 @@ import './PageMint.css'
 
 function PageMint() {
   return (
-    <body >
+    <div >
       <div >
-        <div className='background'>
+        <div >
           <div className='container-mint'>
             <div className='rectangle'>
               <div className='gap-mintpage'>
@@ -146,7 +146,7 @@ function PageMint() {
           </div>
         </div>
       </div>
-    </body>
+    </div>
   );
 }
 
