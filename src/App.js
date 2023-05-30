@@ -1,5 +1,5 @@
 import Header from './components/Header/Header';
-import SectionCreate from './components/sectionCreate/sectionCreate';
+import SectionCreate from './components/pageContract/pageContract';
 
 import './App.css';
 
