@@ -1,0 +1,21 @@
+.next{
+    margin-left: 400px;
+    display: inline-block;
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #555;
+  background-color: #f0f0f0;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.next:hover {
+    color: whitesmoke;
+    background-color:  rgba(174, 87, 224, 0.64);
+    
+  }
