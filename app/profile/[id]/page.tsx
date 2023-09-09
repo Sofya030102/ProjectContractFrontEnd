@@ -30,7 +30,9 @@ export default async function profilePage({ params }: { params: { id: string } }
                         <strong>NFT</strong> пользователя
                     </p>
                     <div>
-                        {nfts ? <NftCard nfts={nfts} /> : null}
+                        {nfts && <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+                            {nfts?.map((nft) => (<NftCard nft={nft} />))}
+                        </div>}
                     </div>
                 </div>
                 <Footer />
